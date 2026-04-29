@@ -24,34 +24,40 @@
    */
 
   /* Surfaces */
-  --bg-main:     #0F172A;
-  --bg-surface:  #1E293B;
+  --bg-main: #0F172A;
+  --bg-surface: #1E293B;
   --bg-elevated: #334155;
 
   /* Text Hierarchy */
-  --white-1:     #F1F5F9; /* Primary — Slate White */
-  --white-2:     #BDE8F5; /* Secondary — Ice Blue */
-  --light-gray:  #94A3B8; /* Muted — Slate Gray */
+  --white-1: #F1F5F9;
+  /* Primary — Slate White */
+  --white-2: #BDE8F5;
+  /* Secondary — Ice Blue */
+  --light-gray: #94A3B8;
+  /* Muted — Slate Gray */
   --light-gray-70: rgba(148, 163, 184, 0.7);
 
   /* Accents */
-  --accent:      #3B82F6; /* Electric Blue (Main Accent) */
-  --accent-soft: #1E293B; /* Dark Blue Tint */
-  --accent-light: #BDE8F5; /* Ice Blue (Secondary) */
+  --accent: #3B82F6;
+  /* Electric Blue (Main Accent) */
+  --accent-soft: #1E293B;
+  /* Dark Blue Tint */
+  --accent-light: #BDE8F5;
+  /* Ice Blue (Secondary) */
 
   /* Legacy Mapping */
-  --jet:                 #334155;
-  --onyx:                var(--bg-elevated);
-  --eerie-black-1:       var(--bg-surface);
-  --eerie-black-2:       var(--bg-surface);
-  --smoky-black:         var(--bg-main);
+  --jet: #334155;
+  --onyx: var(--bg-elevated);
+  --eerie-black-1: var(--bg-surface);
+  --eerie-black-2: var(--bg-surface);
+  --smoky-black: var(--bg-main);
   --orange-white-crayola: var(--accent);
-  --vegas-gold:          var(--accent-light);
+  --vegas-gold: var(--accent-light);
   --bittersweet-shimmer: var(--accent);
 
   /* Simple Gradients */
-  --bg-gradient-onyx:    linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-  --bg-gradient-jet:     linear-gradient(135deg, #334155 0%, #1E293B 100%);
+  --bg-gradient-onyx: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  --bg-gradient-jet: linear-gradient(135deg, #334155 0%, #1E293B 100%);
   --bg-gradient-white-1: linear-gradient(to right, #3B82F6, #60A5FA);
   --bg-gradient-white-2: linear-gradient(to right, #3B82F6, #60A5FA);
   --text-gradient-white: linear-gradient(to right, #F1F5F9, #BDE8F5);
@@ -98,29 +104,36 @@
 
 body.light-mode {
   /* Sleek Dark Gray / Charcoal Edition */
-  --bg-main:    #121212; /* Deep Charcoal */
-  --bg-surface: #1E1E1E; /* Onyx */
-  --bg-elevated: #2A2A2A; /* Steel Gray */
-  
+  --bg-main: #121212;
+  /* Deep Charcoal */
+  --bg-surface: #1E1E1E;
+  /* Onyx */
+  --bg-elevated: #2A2A2A;
+  /* Steel Gray */
+
   /* Text Hierarchy */
-  --white-1:    #E2E8F0; /* Platinum */
-  --white-2:    #94A3B8; /* Silver Gray */
-  --light-gray: #64748B; /* Slate */
+  --white-1: #E2E8F0;
+  /* Platinum */
+  --white-2: #94A3B8;
+  /* Silver Gray */
+  --light-gray: #64748B;
+  /* Slate */
   --light-gray-70: rgba(148, 163, 184, 0.7);
 
   /* Accents */
-  --accent:      #F8FAFC; /* Bright Silver/White */
+  --accent: #F8FAFC;
+  /* Bright Silver/White */
   --accent-soft: #2A2A2A;
   --accent-light: #CBD5E1;
 
   /* Legacy Mapping Overrides */
-  --jet:                 #2A2A2A;
-  --onyx:                var(--bg-elevated);
-  --eerie-black-1:       var(--bg-surface);
-  --eerie-black-2:       var(--bg-surface);
-  --smoky-black:         var(--bg-main);
+  --jet: #2A2A2A;
+  --onyx: var(--bg-elevated);
+  --eerie-black-1: var(--bg-surface);
+  --eerie-black-2: var(--bg-surface);
+  --smoky-black: var(--bg-main);
   --orange-white-crayola: var(--accent);
-  --vegas-gold:          var(--accent-light);
+  --vegas-gold: var(--accent-light);
   --bittersweet-shimmer: var(--accent);
 
   /* Gradients */
@@ -232,7 +245,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: 
+  background:
     radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
     radial-gradient(circle at 85% 85%, rgba(189, 232, 245, 0.1) 0%, transparent 40%);
   filter: blur(100px);
@@ -256,7 +269,8 @@ body {
   background: linear-gradient(135deg, var(--accent) 0%, transparent 100%);
   opacity: 0.15;
   animation: moveCrazy 30s infinite alternate ease-in-out;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); /* Octagon */
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  /* Octagon */
 }
 
 .slider-shape-2 {
@@ -268,19 +282,37 @@ body {
   background: linear-gradient(135deg, var(--white-2) 0%, transparent 100%);
   opacity: 0.1;
   animation: moveCrazySecondary 40s infinite alternate-reverse ease-in-out;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  /* Diamond */
 }
 
 @keyframes moveCrazy {
-  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  50% { transform: translate(20vw, 15vh) rotate(180deg) scale(1.3); border-radius: 20%; }
-  100% { transform: translate(-10vw, 30vh) rotate(360deg) scale(1); }
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate(20vw, 15vh) rotate(180deg) scale(1.3);
+    border-radius: 20%;
+  }
+
+  100% {
+    transform: translate(-10vw, 30vh) rotate(360deg) scale(1);
+  }
 }
 
 @keyframes moveCrazySecondary {
-  0% { transform: translate(0, 0) rotate(360deg) scale(1); }
-  50% { transform: translate(-15vw, -20vh) rotate(180deg) scale(0.8); }
-  100% { transform: translate(5vw, 10vh) rotate(0deg) scale(1.1); }
+  0% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vh) rotate(180deg) scale(0.8);
+  }
+
+  100% {
+    transform: translate(5vw, 10vh) rotate(0deg) scale(1.1);
+  }
 }
 
 .sidebar,
@@ -292,17 +324,22 @@ article {
 }
 
 @keyframes sliderShape {
-  0%, 100% {
+
+  0%,
+  100% {
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
     transform: translate3d(0, 0, 0) rotateZ(0.01deg);
   }
+
   25% {
     border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
     transform: translate3d(20%, 50%, 0) rotateZ(0.01deg);
   }
+
   50% {
     transform: translate3d(0, 100%, 0) rotateZ(0.01deg);
   }
+
   75% {
     border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     transform: translate3d(20%, 50%, 0) rotateZ(0.01deg);
